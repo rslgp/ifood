@@ -30,7 +30,7 @@ function createProductCard(product) {
   price.textContent = `Preço: R$${product["preco"].toFixed(2)}`;
 
   const weight = document.createElement("p");
-  weight.textContent = `Peso: R${product["peso"]}g`;
+  weight.textContent = `Peso: ${product["peso"]}g`;
 
   const pricePerGram = document.createElement("p");
   pricePerGram.textContent = `Preço por Grama: R$${product["preco-por-g"].toFixed(5)}`;
