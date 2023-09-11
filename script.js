@@ -78,6 +78,9 @@ function searchProduct() {
     // Make an API request
     const apiUrl = `https://gkl3bso2q6.execute-api.sa-east-1.amazonaws.com/default/ifood?term=${productName}&lat=${latitude}&lon=${longitude}`;
 
+    const productCardsContainer = document.getElementById("productCards");
+     productCardsContainer.innerHTML = "Carregando...";
+    
     fetch(apiUrl)
         .then(response => response.json())
         .then(data => {
@@ -88,5 +91,6 @@ function searchProduct() {
         })
         .catch(error => {
             console.error('Error:', error);
+            productCardsContainer.innerHTML = "Ocorreu um erro";
         });
 }
