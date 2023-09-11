@@ -1,5 +1,5 @@
 // Initialize the map
-const map = L.map('map').setView([0, 0], 2);
+const map = L.map('map').setView([-14.235, -51.925], 5);
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
 
 // Global variable to store marker
