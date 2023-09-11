@@ -20,7 +20,7 @@ function createProductCard(product) {
   const card = document.createElement("div");
   card.classList.add("product-card");
 
-  const productName = document.createElement("h2");
+  const productName = document.createElement("b");
   productName.textContent = product["nome-mercado"];
     
   const name = document.createElement("p");
