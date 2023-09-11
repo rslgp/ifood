@@ -1,6 +1,6 @@
 // Initialize the map
 const map = L.map('map').setView([-7.244921,-38.376593], 5);
-L.tileLayer('https://worldtiles1.waze.com/tiles/{z}/{x}/{y}.png').addTo(map);
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
 
 // Global variable to store marker
 let marker = null;
