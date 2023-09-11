@@ -27,13 +27,13 @@ function createProductCard(product) {
   name.textContent = product["nome"];
 
   const price = document.createElement("p");
-  price.textContent = `Preço: R$${product["preco"].toFixed(2)}`;
+  price.textContent = `Preço: R$ ${product["preco"].toFixed(2)}`;
 
   const weight = document.createElement("p");
   weight.textContent = `Peso: ${product["peso"]}g`;
 
   const pricePerGram = document.createElement("p");
-  pricePerGram.textContent = `Preço por Grama: R$${product["preco-por-g"].toFixed(5)}`;
+  pricePerGram.textContent = `Preço por Grama: R$ ${product["preco-por-g"].toFixed(5)}`;
 
   //const productCategory = document.createElement("p");
   //productCategory.textContent = `Categoria: ${product["categoria"]}`;
