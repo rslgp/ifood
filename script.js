@@ -22,28 +22,32 @@ function createProductCard(product) {
 
   const productName = document.createElement("h2");
   productName.textContent = product["nome-mercado"];
+    
+  const name = document.createElement("p");
+  name.textContent = product["nome"];
 
   const price = document.createElement("p");
-  price.textContent = `Price: $${product["preco"].toFixed(2)}`;
+  price.textContent = `Preço: R$${product["preco"].toFixed(2)}`;
 
   const weight = document.createElement("p");
-  weight.textContent = `Weight: ${product["peso"]}g`;
+  weight.textContent = `Peso: R${product["peso"]}g`;
 
   const pricePerGram = document.createElement("p");
-  pricePerGram.textContent = `Price per Gram: $${product["preco-por-g"].toFixed(5)}`;
+  pricePerGram.textContent = `Preço por Grama: R$${product["preco-por-g"].toFixed(5)}`;
 
-  const productCategory = document.createElement("p");
-  productCategory.textContent = `Category: ${product["categoria"]}`;
+  //const productCategory = document.createElement("p");
+  //productCategory.textContent = `Categoria: ${product["categoria"]}`;
 
-  const marketId = document.createElement("p");
-  marketId.textContent = `Market ID: ${product["marketid"]}`;
+  //const marketId = document.createElement("p");
+  //marketId.textContent = `Market ID: ${product["marketid"]}`;
 
   card.appendChild(productName);
+  card.appendChild(name);
   card.appendChild(price);
   card.appendChild(weight);
   card.appendChild(pricePerGram);
-  card.appendChild(productCategory);
-  card.appendChild(marketId);
+  //card.appendChild(productCategory);
+  //card.appendChild(marketId);
 
   return card;
 }
